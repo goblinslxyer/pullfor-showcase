@@ -8,7 +8,7 @@ PullFor is a desktop application and decision engine for college football fans. 
 
 ### 1. Main Dashboard & Team Intelligence
 Real-time record tracking, upcoming matchup dynamics, and primary season controls.
-![Main Dashboard](assets/MAIN2.png)
+![Main Dashboard](assets/MAIN1.png)
 
 ### 2. Rule-Based Rooting Guide
 Algorithmic game ranking categorized by high, medium, and low stakes impact.
