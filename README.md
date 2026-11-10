@@ -6,17 +6,25 @@ PullFor is a desktop application and decision engine for college football fans. 
 
 ## Interface Preview
 
-### 1. Matchup Dashboard & Team Intelligence
-Real-time record tracking, stat leader highlights, and upcoming matchup dynamics.
-![Matchup Dashboard](assets/matchup-hero.png)
+### 1. Main Dashboard & Team Intelligence
+Real-time record tracking, upcoming matchup dynamics, and primary season controls.
+![Main Dashboard](assets/MAIN2.png)
 
-### 2. Rule-Based Rooting Guide & Priority Stakes
-Algorithmic game ranking categorized by High, Medium, and Low stakes impact.
-![Rooting Guide](assets/rooting-guide.png)
+### 2. Rule-Based Rooting Guide
+Algorithmic game ranking categorized by high, medium, and low stakes impact.
+![Rooting Guide](assets/ROOTINGGUIDE.png)
 
-### 3. Scenario Engine & Playoff Impact
-Simulated conference title paths, win probability swings, and opponent scouting.
-![Title Impact](assets/title-impact.png)
+### 3. Playoff & Title Race Simulation
+Simulated conference title paths, win probability swings, and scenario breakdowns.
+![Title Race](assets/TITLERACE.png)
+
+### 4. Live Scores & Top 25 Slate
+Gameday scoreboards, ranking dynamics, and custom game filters.
+![Top 25 Scores](assets/SCORESTOP25.png)
+
+### 5. Opponent Scouting & Season Overview
+Deep-dive opponent resume analysis, common matchups, and full season paths.
+![Scout Overview](assets/SCOUT.png)
 
 ---
 
