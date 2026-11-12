@@ -1,62 +1,54 @@
-# PullFor — College Football Playoff Scenario Engine
+# PullFor — College Football Fan App
 
-PullFor is a desktop application and decision engine for college football fans. It synthesizes real-time season data, conference tiebreaker rules, and scenario modeling to answer the core game-day question for fans: "Which games matter to my team today, who do I root for, and why?"
+PullFor is a Windows desktop app for college football fans. It helps answer the weekly question: which games matter to my team, who should I root for, and why? It combines a transparent rules-based Rooting Guide, conference standings, season data, and PullFor Power, the app's own statistical model. Model estimates are shown separately from rooting calls and are not betting advice.
 
----
+**Current status:** PullFor 0.6.2 (beta) was submitted to the Microsoft Store in November 2026. A mobile version is in the works.
 
-## Interface Preview
+## Desktop showcase
 
-### 1. Main Dashboard & Team Intelligence
-Real-time record tracking, upcoming matchup dynamics, and primary season controls.
-![Main Dashboard](assets/MAIN1.png)
+These 1920×1080 screenshots show the current Windows desktop app.
 
-### 2. Rule-Based Rooting Guide
-Algorithmic game ranking categorized by high, medium, and low stakes impact.
-![Rooting Guide](assets/ROOTINGGUIDE.png)
+### Home — matchup, stakes, PullFor Power, and stat leaders
+![PullFor desktop Home](assets/desktop/01-home.png)
 
-### 3. Playoff & Title Race Simulation
-Simulated conference title paths, win probability swings, and scenario breakdowns.
-![Title Race](assets/TITLERACE.png)
+### Rooting Guide — weekly calls with the rules behind them
+![PullFor desktop Rooting Guide](assets/desktop/02-rooting-guide.png)
 
-### 4. Live Scores & Top 25 Slate
-Gameday scoreboards, ranking dynamics, and custom game filters.
-![Top 25 Scores](assets/SCORESTOP25.png)
+### Title Race — conference simulations and what-if scenarios
+![PullFor desktop Title Race](assets/desktop/03-title-race.png)
 
-### 5. Opponent Scouting & Season Overview
-Deep-dive opponent resume analysis, common matchups, and full season paths.
-![Scout Overview](assets/SCOUT.png)
+### Scoreboard — weekly slate, results, rankings, and PullFor estimates
+![PullFor desktop Scoreboard](assets/desktop/05-scores.png)
 
----
+### Scout — next opponent comparison
+![PullFor desktop Scout](assets/desktop/06-scout.png)
 
-## Key Architecture & Features
+### Corkboard — concept preview
+![PullFor desktop Corkboard concept preview](assets/desktop/07-corkboard.png)
 
-- Rule-Based Guidance Engine: Evaluates custom rivalries, head-to-head records, conference standings, and tiebreaker conditions in priority order.
-- Playoff & Title Race Simulation: Runs iterative Monte Carlo season simulations to calculate live conference championship and playoff odds.
-- Stakes Scoring Framework: Weighs matchup importance mathematically without relying on betting markets or odds language.
-- Local-First Performance: Built on Python with an offline-capable JSON cache, sub-second page transitions, and strict zero-API-overuse governance.
+Corkboard is a concept preview, not a live community network. Listings are examples; posting, sharing, maps, reports, and blocking are not connected to a service, and nothing is shared.
 
----
+### Standings
+![PullFor desktop conference standings](assets/desktop/04-standings.png)
 
-## Technical Stack
+### Home in light theme
+![PullFor desktop Home in light theme](assets/desktop/08-home-light.png)
 
-- Frontend / UI: HTML5 / CSS3 / JavaScript (ES6)
-- Desktop Runtime: Python / pywebview (Edge WebView2)
-- Database & Sync: Supabase / Local JSON Caching Layer
-- Data Pipeline: CollegeFootballData API & Cloudflare Edge CDN
-- Geospatial & Mapping: Mapbox API
+## Core features
 
----
+- **Rooting Guide:** Applies PullFor's written rules to games that matter to the selected team, explains each call, and sorts games by rule-based stakes. Custom rivals are supported.
+- **PullFor Power (beta):** A model fitted to this season's scores provides PullFor's own estimates for games and season scenarios. It does not change Rooting Guide calls and is not betting advice.
+- **Season tools:** Home, Standings, Scoreboard, Top 25, Scout, Title Race, playoff picture, and other optional beta features help fans follow the season in one desktop app.
+- **Corkboard concept:** A preview of a future tailgate and watch-party board; it is not connected or sharing live listings.
 
-## Current Project Status & Milestones
+## Technical overview
 
-- [x] Phase 1 (MVP): Core rooting logic engine, local caching, and custom rivalry configuration.
-- [x] Phase 2 (UX/UI Polish): Custom athletic design layout, dark/light themes, and window management.
-- [x] Phase 3 (Lab Sandbox): Integrated Monte Carlo title race simulator, Scout profiles, and Saturday game-day tallies.
-- [ ] Phase 4 (Deployment): Public Windows installer distribution and web reference portal.
+The desktop screens use HTML, CSS, and JavaScript and run in Python through pywebview with Microsoft Edge WebView2. Rule logic and season calculations are separate from the screens. Official CollegeFootballData season data is published through PullFor's Cloudflare-hosted dataset; the app validates and caches data locally.
 
----
+## Project status
 
-## Grant & Project Inquiries
-Note: The primary source code repository for PullFor remains in private development. This preview repository serves as a visual proof-of-concept and technical summary for grant evaluation, microgrant applications, and technical partnerships.
+- Windows desktop beta: 0.6.2 submitted to the Microsoft Store.
+- Mobile version: in the works; this showcase currently focuses on desktop.
+- Corkboard: concept preview only, not a live service.
 
-For further information or demonstration requests, please contact the development team.
+For project inquiries, contact the development team.
